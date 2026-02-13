@@ -8,9 +8,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           
-          {/* Logo & Brand Name - Clickable Section */}
+          {/* Logo & Brand Name */}
           <div className="flex items-center">
-            {/* ✅ Poora logo aur text ab home page par redirect karega */}
             <Link href="/" className="flex items-center gap-3 group transition-all">
               <Image 
                 src="/logo-icon.png" 
@@ -25,18 +24,24 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Desktop Navigation Links */}
+          {/* ✅ Desktop Navigation Links (Updated with Smooth IDs) */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-slate-400 hover:text-white transition-colors text-sm font-medium uppercase tracking-widest">Services</a>
-            <a href="#about" className="text-slate-400 hover:text-white transition-colors text-sm font-medium uppercase tracking-widest">About</a>
-            <a href="#contact" className="text-slate-400 hover:text-white transition-colors text-sm font-medium uppercase tracking-widest">Contact</a>
+            <Link href="#services" className="text-slate-400 hover:text-white transition-colors text-sm font-medium uppercase tracking-widest">
+              Services
+            </Link>
+            <Link href="#about" className="text-slate-400 hover:text-white transition-colors text-sm font-medium uppercase tracking-widest">
+              About
+            </Link>
+            <Link href="#contact" className="text-slate-400 hover:text-white transition-colors text-sm font-medium uppercase tracking-widest">
+              Contact
+            </Link>
           </div>
 
           {/* CTA Button */}
           <div className="flex items-center">
-            <a href="#contact" className="bg-orange-500 text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-orange-600 transition-all shadow-lg shadow-orange-500/20 uppercase tracking-widest">
+            <Link href="#contact" className="bg-orange-500 text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-orange-600 transition-all shadow-lg shadow-orange-500/20 uppercase tracking-widest">
               Get Started
-            </a>
+            </Link>
           </div>
 
         </div>
